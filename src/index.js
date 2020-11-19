@@ -70,15 +70,6 @@ function addToyToPage(toy){
   });
 };
 
-function addNewToyToDatabase () {
-  const form = document.getElementById('add-toy');
-  const formData = new FormData(form);
-    fetch('http://localhost:3000/toys', {
-      method: 'POST',
-      body: form
-    });
-};
-
 function postNewToytoServer(toyData){
   fetch('http://localhost:3000/toys', {
     method: 'POST', // or 'PUT'
